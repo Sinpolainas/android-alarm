@@ -5,6 +5,7 @@ import com.martin_thoma.drift.core.ringing.AlarmVolume
 import com.martin_thoma.drift.core.scheduling.ScheduleSync
 import com.martin_thoma.drift.feature.stopwatch.StopwatchNotifier
 import com.martin_thoma.drift.feature.timer.TimerNotifier
+import com.martin_thoma.drift.widget.AlarmWidgetSync
 import dagger.hilt.android.HiltAndroidApp
 import javax.inject.Inject
 
@@ -18,6 +19,8 @@ class DriftApplication : Application() {
 
     @Inject lateinit var timerNotifier: TimerNotifier
 
+    @Inject lateinit var alarmWidgetSync: AlarmWidgetSync
+
     override fun onCreate() {
         super.onCreate()
         // Nothing rings in a fresh process, so a saved volume is left over from a ring the process died in.
@@ -25,5 +28,6 @@ class DriftApplication : Application() {
         scheduleSync.start()
         stopwatchNotifier.start()
         timerNotifier.start()
+        alarmWidgetSync.start()
     }
 }

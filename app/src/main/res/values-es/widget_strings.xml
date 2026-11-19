@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_name">Alarma</string>
+    <string name="widget_description">Una alarma: su hora, lo que falta y un botón para activarla o desactivarla</string>
+    <string name="widget_choose_alarm">¿Qué alarma quieres en el widget?</string>
+    <string name="widget_no_alarms">Crea primero una alarma en Drift</string>
+    <string name="widget_pick_alarm">Toca para elegir una alarma</string>
+    <string name="widget_rings_in">"Suena en "</string>
+    <string name="widget_off">Desactivada</string>
+    <string name="widget_once">Una vez</string>
+    <string name="widget_every_day">Todos los días</string>
+    <string name="widget_toggle">Activar o desactivar la alarma</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_name">Alarm</string>
+    <string name="widget_description">One alarm: its time, the time left and an on/off button</string>
+    <string name="widget_choose_alarm">Which alarm should the widget show?</string>
+    <string name="widget_no_alarms">Create an alarm in Drift first</string>
+    <string name="widget_pick_alarm">Tap to choose an alarm</string>
+    <string name="widget_rings_in">"Rings in "</string>
+    <string name="widget_off">Off</string>
+    <string name="widget_once">Once</string>
+    <string name="widget_every_day">Every day</string>
+    <string name="widget_toggle">Turn the alarm on or off</string>
+</resources>

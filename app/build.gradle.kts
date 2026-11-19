@@ -15,6 +15,16 @@ android {
         versionName = "0.1.0"
     }
 
+    // A fixed key, so each new APK installs over the last one without uninstalling.
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("widget-debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true
@@ -64,6 +74,7 @@ dependencies {
     implementation(libs.androidx.navigation3.runtime)
     implementation(libs.androidx.navigation3.ui)
     implementation(libs.kotlinx.serialization.core)
+    implementation(libs.kotlinx.coroutines.android)
 
     // Robolectric app tests and README screenshots (./gradlew :app:recordRoborazziDebug)
     testImplementation(project(":core:database"))
